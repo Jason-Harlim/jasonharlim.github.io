@@ -41,17 +41,17 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarContent">
               <ul class="navbar-nav mr-auto">
+                <li>
+                  <a data-scroll="scrollTo" href="#Trailer">Trailer</a>
+                </li>
                 <li class="active">
-                  <a data-scroll="scrollTo" href="#speciality">About</a>
+                  <a data-scroll="scrollTo" href="#About">About</a>
                 </li>
                 <li>
-                  <a data-scroll="scrollTo" href="#patients">Explanation</a>
+                  <a data-scroll="scrollTo" href="#Explain">Explanation</a>
                 </li>
                 <li>
-                  <a data-scroll="scrollTo" href="#doctors">Team</a>
-                </li>
-                <li>
-                  <a data-scroll="scrollTo" href="#consultation">Trailer</a>
+                  <a data-scroll="scrollTo" href="#Team">Team</a>
                 </li>
               </ul>
             </div>
@@ -59,7 +59,7 @@
           </div>
         </nav>
       </header>
-      <!-- Slider #1 ============================================= -->
+      <!-- Tab #1 ============================================= -->
       <section id="hero" class="section hero">
         <div class="bg-section">
           <img src="assets/images/background/hero.jpg" alt="background">
@@ -67,13 +67,13 @@
         <div class="container">
           <div class="row row-content">
             <div class="col-12 col-md-6 col-lg-6">
-              <div class="hero-headline">AI and Healthcare
+              <div class="hero-headline">AI and Healthcare's
                 <br>
                 in 
-                <span class="typed-text" data-typed-string="Systematic,Implementing,Lifestyle"></span></div>
+                <span class="typed-text" data-typed-string="Algorithm,Systems,Implementation"></span></div>
               <div class="hero-bio">"It has clearly become electrifying that technology has transcended our humanity" - Albert Einstein</div>
               <div class="hero-action">
-                <a href="#speciality" class="btn btn--primary" data-scroll="scrollTo">Read More</a>
+                <a href="#Feature" class="btn btn--primary" data-scroll="scrollTo">Read More</a>
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-6"></div>
@@ -82,9 +82,10 @@
         </div>
         <!-- .container end -->
       </section>
-      <!-- #slider end -->
-      <!-- Feature #1 ============================================= -->
-      <section id="speciality" class="section feature feature-3 bg-white pb-80">
+      <!-- #Tab end -->
+
+      <!-- Tab #1 ============================================= -->
+      <section id="Feature" class="section feature feature-3 bg-white pb-80">
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-12 col-lg-12">
@@ -189,7 +190,7 @@
         </div>
         <!-- .container end -->
       </section>
-      <!-- #speciality end -->
+      <!-- #Tab end -->
 
       <section id="bar" class="bg-white pt-0 pb-0">
         <div class="container">
@@ -202,8 +203,94 @@
       </section>
       <!-- #bar end -->
 
+<!-- Action ============================================= -->
+<section id="Trailer" class="section feature feature-2 bg-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-6">
+        <div class="feature-panel">
+          <div class="feature-content">
+            <h3>Trailer</h3>
+            <p class="mb-30">We'll keep you updated on any information we have. So don't forget to visit our website all the time!!</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dtJoAMWCyTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <!-- .feature-panel end -->
+      </div>
+      <!-- .col-md-6 end -->
+      <div class="col-12 col-md-6 col-lg-5 offset-lg-1">
+        <div class="form-wrapper">
+          <div class="heading">
+            <h3 class="heading-title">Feedback Box</h3>
+          </div>
+          <!-- .form-group end -->
+          <form method="post" action="assets/php/contact.php" class="contactForm mb-0">
+            <div id="result" class="contact-result"></div>
+            <div class="form-group">
+              <label for="name">Your Name*</label>
+              <input type="text" class="form-control" name="name" id="name" required="required">
+            </div>
+            <!-- .form-group end -->
+            <div class="form-group">
+              <label for="name">Your Phone*</label>
+              <input type="text" class="form-control" name="phone" id="phone" required="required">
+            </div>
+            <!-- .form-group end -->
+            <div class="form-group">
+              <label for="user">Does our website give you enough information?*</label>
+              <div class="form-group">
+                <div class="form-check form-check-inline form-radio">
+                  <label class="label-radio">
+                    <input class="form-check-input" type="radio" name="user" id="user" value="New" checked="checked">
+                    <span class="radio-indicator"></span>
+                  </label>
+                  <label class="form-check-label" for="user">
+                    Yes, of course
+                  </label>
+                </div>
+                <div class="form-check form-check-inline form-radio">
+                  <label class="label-radio">
+                    <input class="form-check-input" type="radio" name="user" id="user" value="Existing">
+                    <span class="radio-indicator"></span>
+                  </label>
+                  <label class="form-check-label" for="user">
+                    Not good enough
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- .form-group end -->
+            <div class="form-group">
+              <label for="">Give us Score*</label>
+              <div class="select-form">
+                <i class="fa fa-caret-down"></i>
+                <select name="" id="" class="form-control">
+                  <option value="0">25</option>
+                  <option value="1">50</option>
+                  <option value="2">75</option>
+                  <option value="3">100</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Send" name="submit" class="btn btn--primary btn--block">
+            </div>
+            <!-- .form-group end -->
+            <div class="agreement">+ Your assessment, it means a lot +</div>
+          </form>
+        </div>
+      </div>
+      <!-- .col-md-6 end -->
+
+    </div>
+    <!-- .row end -->
+  </div>
+  <!-- .container end -->
+</section>
+<!-- #Tab end -->
+
       <!-- Feature #2 ============================================= -->
-      <section id="feature2" class="section feature feature-left bg-white">
+      <section id="About" class="section feature feature-left bg-white">
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-6 col-lg-6">
@@ -246,7 +333,7 @@
       <!-- #feature2 end -->
 
       <!-- Testimonial ============================================= -->
-      <section id="patients" class="section testimonials bg-gray">
+      <section id="Explain" class="section testimonials bg-gray">
         <div class="container">
           <div class="row clearfix">
             <div class="col-12 col-md-12 col-lg-12">
@@ -269,9 +356,10 @@
         </div>
         <!-- .container End -->
       </section>
-      <!-- #patients End-->
+      <!-- #Tab End-->
+      
       <!-- Team Section ============================================= -->
-      <section id="doctors" class="team bg-white">
+      <section id="Team" class="team bg-white">
         <div class="container">
           <div class="row clearfix">
             <div class="col-12 col-md-12 col-lg-12">
@@ -375,92 +463,8 @@
           </div>
         </div>
       </section>
-      <!-- #doctors end -->
-      <!-- Action ============================================= -->
-      <section id="consultation" class="section feature feature-2 bg-gray">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-6 col-lg-6">
-              <div class="feature-panel">
-                <div class="feature-content">
-                  <h3>Trailer</h3>
-                  <p class="mb-30">We'll keep you updated on any information we have. So don't forget to visit our website all the time!!</p>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/dtJoAMWCyTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-              </div>
-              <!-- .feature-panel end -->
-            </div>
-            <!-- .col-md-6 end -->
-            <div class="col-12 col-md-6 col-lg-5 offset-lg-1">
-              <div class="form-wrapper">
-                <div class="heading">
-                  <h3 class="heading-title">Feedback Box</h3>
-                </div>
-                <!-- .form-group end -->
-                <form method="post" action="assets/php/contact.php" class="contactForm mb-0">
-                  <div id="result" class="contact-result"></div>
-                  <div class="form-group">
-                    <label for="name">Your Name*</label>
-                    <input type="text" class="form-control" name="name" id="name" required="required">
-                  </div>
-                  <!-- .form-group end -->
-                  <div class="form-group">
-                    <label for="name">Your Phone*</label>
-                    <input type="text" class="form-control" name="phone" id="phone" required="required">
-                  </div>
-                  <!-- .form-group end -->
-                  <div class="form-group">
-                    <label for="user">Does our website give you enough information?*</label>
-                    <div class="form-group">
-                      <div class="form-check form-check-inline form-radio">
-                        <label class="label-radio">
-                          <input class="form-check-input" type="radio" name="user" id="user" value="New" checked="checked">
-                          <span class="radio-indicator"></span>
-                        </label>
-                        <label class="form-check-label" for="user">
-                          Yes, of course
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline form-radio">
-                        <label class="label-radio">
-                          <input class="form-check-input" type="radio" name="user" id="user" value="Existing">
-                          <span class="radio-indicator"></span>
-                        </label>
-                        <label class="form-check-label" for="user">
-                          Not good enough
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- .form-group end -->
-                  <div class="form-group">
-                    <label for="speciality">Give us Score*</label>
-                    <div class="select-form">
-                      <i class="fa fa-caret-down"></i>
-                      <select name="speciality" id="speciality" class="form-control">
-                        <option value="0">25</option>
-                        <option value="1">50</option>
-                        <option value="2">75</option>
-                        <option value="3">100</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <input type="submit" value="Send" name="submit" class="btn btn--primary btn--block">
-                  </div>
-                  <!-- .form-group end -->
-                  <div class="agreement">+ Your assessment, it means a lot +</div>
-                </form>
-              </div>
-            </div>
-            <!-- .col-md-6 end -->
-
-          </div>
-          <!-- .row end -->
-        </div>
-        <!-- .container end -->
-      </section>
-      <!-- #consultation end -->
+      <!-- #mem end -->
+      
       <!-- Footer ============================================= -->
       <footer id="footerParallax" class="footer">
         <div class="footer-top">

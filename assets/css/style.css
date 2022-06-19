@@ -1464,7 +1464,7 @@ label {
   top: 0;
 }
 .header .navbar .logo {
-  max-width: 80%;
+  max-width: 60%;
   height: auto;
   line-height: 140px;
 }
@@ -1666,7 +1666,7 @@ li.open > a:focus {
 }
 .hero .hero-headline {
   color: #000;
-  font-size: 45px;
+  font-size: 37px;
   font-weight: 500;
   line-height: 75px;
   margin-bottom: 35px;
@@ -1772,7 +1772,7 @@ li.open > a:focus {
 }
 
 /*------------------------------------*\
-    #Features
+    #Tab 1
 \*------------------------------------*/
 .feature-panel {
   position: relative;
@@ -2031,7 +2031,7 @@ li.open > a:focus {
   }
 }
 /*------------------------------------*\
-    #PRICING-SECTION
+    #SECTION
 \*------------------------------------*/
 .pricing-filter {
   margin: 0 auto 100px auto;
@@ -2416,7 +2416,7 @@ li.open > a:focus {
   }
 }
 /*------------------------------------*\
-    #Landing Page / Promo Page
+    #Landing
 \*------------------------------------*/
 .landing-hero {
   height: 100vh;
